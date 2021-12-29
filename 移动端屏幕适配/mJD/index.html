@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>仿京东</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- 首页样式 -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./swiper-7.2.0/swiper/swiper-bundle.min.css" />
+    <script src="./swiper-7.2.0/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- app区域 start -->
+    <div class="app">
+        <ul>
+            <li></li>
+            <li></li>
+            <li>打开京东App，购物更轻松</li>
+            <li>立即打开</li>
+        </ul>
+    </div>
+    <!-- app区域 end -->
+    <!-- 头部区域 start -->
+    <header class="header">
+        <div class="btn"></div>
+        <div class="search">
+            <div class="jd_icon"></div>
+            <div class="search_icon"></div>
+            <div class="sou"></div>
+        </div>
+        <div class="login">登陆</div>
+    </header>
+    <!-- 头部区域 end -->
+    <!-- 主体区域 start-->
+    <div class="main">
+        <!-- 轮播图区域 -->
+        <div class="slider">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./upload/banner.dpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./upload/banner1.dpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./upload/banner2.dpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./upload/banner3.dpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 轮播图js -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                loop: true,
+                autoplay: {
+                    delay: 1500,
+                    stopOnLastSlide: false,
+                    disableOnInteraction: false,
+                },
+            });
+        </script>
+        <!-- 品牌日 -->
+        <ul class="brand">
+            <li><a href=""><img src="upload/pic11.dpg"></a></li>
+            <li><a href=""><img src="upload/pic22.dpg"></a></li>
+            <li><a href=""><img src="upload/pic33.dpg"></a></li>
+        </ul>
+    </div>
+    <!-- 导航区域 -->
+    <ul class="nav clearfix">
+        <li>
+            <a href="#">
+                <img src="./upload/nav1.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./upload/nav1.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./upload/nav1.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./upload/nav1.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./upload/nav2.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./upload/nav2.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./upload/nav2.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./upload/nav3.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./upload/nav3.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./upload/nav3.webp">
+                <span>京东超市</span>
+            </a>
+        </li>
+    </ul>
+    <!-- 新闻区域  -->
+    <ul class="news">
+        <li><a href="#"><img src="./upload/new1.dpg"></a></li>
+        <li><a href="#"><img src="./upload/new2.dpg"></a></li>
+        <li><a href="#"><img src="./upload/new3.dpg"></a></li>
+    </ul>
+    <!-- 主体区域 end-->
+
+</body>
+
+</html>

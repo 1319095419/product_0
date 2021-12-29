@@ -1,0 +1,142 @@
+/* logo秒杀 */
+.logo .sk{
+    float: left;
+    width: 88px;
+    height: 33px;
+    padding-left: 13px;
+    margin:10px 0 0 13px;
+    border-left: 2px solid #b1191a;
+    background: url(../images/sk.png) no-repeat center;
+    background-clip: content-box;
+    /* 文字隐藏 */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+/* 导航条区域 */
+.nav{
+    height: 48px;
+    line-height: 48px;
+}
+.nav .second_kill li{
+    float: left;
+}
+.nav .second_kill li a{
+    color: #000;
+    font-size: 16px;
+    padding: 0 28px;
+    font-weight: 700;
+}
+.nav .classify li{
+    float: left;
+}
+.nav .classify li a{
+    padding: 0 23px;
+    color: #666;
+    font-size: 14px;
+}
+.nav .classify li:last-child a::after{
+    margin-left: 4px;
+    content: '\e900';
+    font-family: 'icomoon';
+    vertical-align: middle;
+}
+.nav .classify li a:hover{
+    color: #b1191a;
+}
+/* 横幅区域 */
+.banner{
+    height: 120px;
+    margin-bottom: 25px;
+    background: url(../upload/bg_03.png) no-repeat center 0;
+}
+/* 产品区域 */
+.product{
+    margin-bottom: 15px;
+}
+.product_list{
+    width: 1216px;
+}
+.product_item{
+    float: left;
+    margin:0 14px 10px 0;
+    position: relative;
+    width: 290px;
+    height: 460px;
+    border: 1px solid #fff;
+}
+.product_item:hover{
+    border: 1px solid #b1191a;
+}
+.product_item .pic_box{
+    height: 295px;
+}
+.product_item .pic_box img{
+    width: 100%;
+    height: 295px;
+}
+.product_item .text_box{
+    padding: 0 12px;
+}
+.product_item .text_box .title{
+    height: 44px;
+    line-height: 22px;
+    color: #666;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.product_item .text_box .price{
+    color: #e60012;
+    font-size: 14px;
+}
+.product_item .text_box .price .old_price{
+    font-size: 22px;
+}
+.product_item .text_box .price .new_price{
+    margin-left: 11px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+.product_item .text_box .sales{
+    color: #666;
+    font-size: 14px;
+}
+.product_item .text_box .sales .unsold_number{
+    color: #e12228;
+    font-size: 16px;
+}
+.product_item .text_box .sales .progress_bar{
+    position: relative;
+    display: inline-block;
+    width: 132px;
+    height: 12px;
+    border: 1px solid #e12228;
+    border-radius: 6px;
+    margin: 0 3px;
+}
+.product_item .text_box .sales .red_bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 87%;
+    height: 100%;
+    background-color: #ed282e;
+    border-radius: 5px 0 0 5px;
+}
+.product_item .buy_btn{
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 49px;
+    background-color: #e60012;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 49px;
+}

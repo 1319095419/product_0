@@ -1,0 +1,213 @@
+/* 版心 */
+.center-wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部区域 */
+.header {
+    height: 84px;
+    padding-top: 17px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.logo {
+    width: 171px;
+    height: 61px;
+}
+
+.logo h1 {
+    width: 100%;
+    height: 100%;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/logo.png);
+    /* 标题文字不显示，淘宝做法 */
+    overflow: hidden;
+    text-indent: -9999px;
+    /* font-size: 0; 标题文字不显示，京东做法 */
+}
+
+/* 主体区域 */
+.main {
+    height: 522px;
+    padding-top: 10px;
+    border: 1px solid #dfdfdf;
+}
+
+.main .hd {
+    height: 42px;
+    padding: 0 10px;
+    background-color: #ececec;
+    color: #333;
+    line-height: 42px;
+}
+
+.main .hd h2 {
+    float: left;
+    font-size: 18px;
+}
+
+.main .hd .login {
+    float: right;
+    font-size: 14px;
+}
+
+.main .hd .login a {
+    color: #c81623;
+    font-size: 14px;
+}
+
+.main .bd {
+    padding-top: 54px;
+}
+
+.main .bd .login_list {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.main .bd .login_list li {
+    margin-bottom: 20px;
+}
+
+/* 提示信息 right or error */
+.success,.error{
+    margin-left: 12px;
+    font-size: 12px;
+}
+.success::before,.error::before{
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.success{
+    color: #40b83f;
+}
+.success::before{
+    background: url(../images/success.png) no-repeat center;
+}
+.error{
+    color: #df3033;
+}
+.error::before{
+    background: url(../images/error.png) no-repeat center;
+}
+.main .bd .login_list .login_item {
+    display: inline-block;
+    width: 90px;
+    color: #4c4c4c;
+    font-size: 14px;
+    text-align: right;
+}
+
+.main .bd .login_list .login_item+input {
+    width: 240px;
+    height: 36px;
+    padding: 0 15px;
+    border: 1px solid #bbbaba;
+}
+
+.main .bd .login_list .secure {
+    margin-top: -10px;
+    padding-left: 160px;
+    font-size: 12px;
+}
+
+.main .bd .login_list .secure span {
+    padding: 0 10px;
+    color: #b2b2b2;
+}
+/* 安全等级 */
+.main .bd .login_list .secure i {
+    display: inline-block;
+    width: 34px;
+    height: 13px;
+    margin-right: 2px;
+    color: #fff;
+    text-align: center;
+    line-height: 13px;
+}
+
+.low {
+    background-color: #de1111;
+}
+
+.mid {
+    background-color: #40b83f;
+}
+
+.high {
+    background-color: #f79100;
+}
+
+.main .bd .agree {
+    padding: 20px 0;
+    padding-left: 90px;
+    color: #4d4d4d;
+    font-size: 12px;
+}
+
+.main .bd .agree input {
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.main .bd .agree a {
+    margin-left: 10px;
+    color: #1ba1e6;
+}
+
+.main .bd .btn {
+    width: 200px;
+    height: 34px;
+    margin-left: 90px;
+    background-color: #c81623;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+}
+
+/* 页脚区域 */
+.mod_copyright {
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+.mod_copyright .list {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.mod_copyright .list li {
+    float: left;
+}
+
+.mod_copyright .list li a {
+    padding: 0 16px 0 17px;
+    border-right: 1px solid #666;
+    color: #666;
+    font-size: 12px;
+}
+
+.mod_copyright .list li:last-child a {
+    border-right: none;
+}
+
+.mod_copyright .copy_right {
+    color: #666;
+    font-size: 12px;
+}
